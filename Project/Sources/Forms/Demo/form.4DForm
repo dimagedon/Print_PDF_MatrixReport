@@ -1,0 +1,137 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onDoubleClick",
+		"onMenuSelect"
+	],
+	"windowTitle": "Matrix Report PDF",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {
+				"TraceCheckbox": {
+					"type": "checkbox",
+					"text": "TRACE",
+					"top": 429,
+					"left": 557,
+					"width": 59,
+					"height": 26,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "btnTrace"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text": {
+					"type": "text",
+					"text": "Print pdf file with matrix report without using 4D form",
+					"top": 32,
+					"left": 96,
+					"width": 420,
+					"height": 64,
+					"fontSize": 24,
+					"fontWeight": "bold",
+					"textAlign": "center"
+				},
+				"btn_CreateData_obj": {
+					"type": "button",
+					"text": "Generate Test Data",
+					"top": 134,
+					"left": 60,
+					"width": 131,
+					"height": 30,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "btn_CreateData",
+					"style": "flat",
+					"method": "ObjectMethods/btn_CreateData_obj.4dm"
+				},
+				"btn_Print_wData_obj": {
+					"type": "button",
+					"text": "Print using data from table",
+					"top": 134,
+					"left": 351,
+					"width": 190,
+					"height": 30,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "btn_Print_wData",
+					"style": "flat",
+					"method": "ObjectMethods/btn_Print_wData_obj.4dm"
+				},
+				"btn_Print_wCollection_obj": {
+					"type": "button",
+					"text": "Print using data from collection",
+					"top": 190,
+					"left": 351,
+					"width": 190,
+					"height": 30,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "btn_Print_wCollection",
+					"style": "flat",
+					"method": "ObjectMethods/btn_Print_wCollection_obj.4dm"
+				},
+				"Button3": {
+					"type": "button",
+					"text": "Cancel",
+					"top": 416,
+					"left": 60,
+					"width": 131,
+					"height": 30,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "btn_Cancel",
+					"style": "flat",
+					"action": "cancel",
+					"stroke": "#ff0000"
+				},
+				"btn_DeleteData_obj": {
+					"type": "button",
+					"text": "Delete Test Data",
+					"top": 190,
+					"left": 60,
+					"width": 131,
+					"height": 30,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "btn_DeleteData",
+					"style": "flat",
+					"method": "ObjectMethods/btn_DeleteData_obj.4dm"
+				}
+			}
+		}
+	],
+	"width": 640,
+	"height": 480,
+	"geometryStamp": 39,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"method": "method.4dm",
+	"menuBar": "Barre #1"
+}

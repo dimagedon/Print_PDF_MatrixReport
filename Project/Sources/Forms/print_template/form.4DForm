@@ -1,0 +1,139 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 15,
+	"bottomMargin": 15,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onUnload"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"o_print_text": {
+					"type": "input",
+					"top": 15,
+					"left": 15,
+					"width": 200,
+					"height": 17,
+					"dataSource": "print_text",
+					"fontFamily": "Segoe UI",
+					"fontSize": 12,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "solid",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"print_num": {
+					"type": "input",
+					"top": 64,
+					"left": 15,
+					"width": 200,
+					"height": 16,
+					"dataSource": "print_num",
+					"dataSourceTypeHint": "number",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"print_date": {
+					"type": "input",
+					"top": 95,
+					"left": 15,
+					"width": 200,
+					"height": 16,
+					"dataSource": "print_date",
+					"dataSourceTypeHint": "date",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"print_time": {
+					"type": "input",
+					"top": 135,
+					"left": 15,
+					"width": 200,
+					"height": 16,
+					"dataSource": "print_time",
+					"dataSourceTypeHint": "time",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"timeFormat": "hh_mm_ss",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"print_pic": {
+					"type": "input",
+					"top": 175,
+					"left": 15,
+					"width": 200,
+					"height": 19,
+					"dataSource": "print_pic",
+					"dataSourceTypeHint": "picture",
+					"borderStyle": "none",
+					"pictureFormat": "proportionalCenter",
+					"dragging": "custom"
+				},
+				"o_print_text_noBorder": {
+					"type": "input",
+					"top": 37,
+					"left": 15,
+					"width": 200,
+					"height": 17,
+					"dataSource": "print_text_noBorder",
+					"fontFamily": "Segoe UI",
+					"fontSize": 12,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"o_print_line_H": {
+					"type": "line",
+					"top": 220,
+					"left": 15,
+					"width": 160
+				},
+				"o_print_line_V": {
+					"type": "line",
+					"top": 18,
+					"left": 235,
+					"height": 160
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

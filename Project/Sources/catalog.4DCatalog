@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="Print_PDF_MatrixReport" uuid="CF74002D81076B488EB3A24340D381CC" collation_locale="de">
+	<schema name="DEFAULT_SCHEMA"/>
+	<table name="Test_Prices" uuid="4E718B1E4C86F84F82B726803FD4E595" id="1" hide_in_REST="true">
+		<field name="ID" uuid="5DB6B23D646CBB429FEBB1BDF2B398D1" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
+		<field name="Code" uuid="23240CAF3563D842A26CD3ABF138F96F" type="10" limiting_length="9" id="2"/>
+		<field name="Location" uuid="C55F793146603B4A8440DA6608D2ED1E" type="10" limiting_length="3" id="3"/>
+		<field name="Season_Beg" uuid="F25630AF0763754690080B365C84BD01" type="8" id="4"/>
+		<field name="Season_End" uuid="E300CB050109414A931DA2E02A3E699B" type="8" id="5"/>
+		<field name="FlexLevel" uuid="1620DE6E8DA3A4418BEDEC46A92643BC" type="10" limiting_length="3" id="6"/>
+		<field name="Status" uuid="562E8B344E981842A0E4D987FD2D8F00" type="10" limiting_length="3" id="7"/>
+		<field name="isChanged" uuid="DAD5BAED4805F44EA05DCBCB56BA7B13" type="1" id="8"/>
+		<field name="Stamp" uuid="613B030C90B72B4D954F869EA9F9EE14" type="10" limiting_length="255" id="9"/>
+		<primary_key field_name="ID" field_uuid="5DB6B23D646CBB429FEBB1BDF2B398D1"/>
+		<table_extra output_form="UserList">
+			<editor_table_info displayable_fields_count="9">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="40" top="40" width="163" height="242.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<index kind="regular" uuid="2DEEE3A56E1B0542A8871556729B50D1" type="7">
+		<field_ref uuid="C55F793146603B4A8440DA6608D2ED1E" name="Location">
+			<table_ref uuid="4E718B1E4C86F84F82B726803FD4E595" name="Test_Prices"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="55D77C3AEAE10243B01D3D5B6094C858" type="7">
+		<field_ref uuid="23240CAF3563D842A26CD3ABF138F96F" name="Code">
+			<table_ref uuid="4E718B1E4C86F84F82B726803FD4E595" name="Test_Prices"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="8852C27FB7C0FB49A709999EE63F4132" type="7">
+		<field_ref uuid="5DB6B23D646CBB429FEBB1BDF2B398D1" name="ID">
+			<table_ref uuid="4E718B1E4C86F84F82B726803FD4E595" name="Test_Prices"/>
+		</field_ref>
+	</index>
+	<base_extra>
+		<journal_file journal_file_enabled="true"/>
+	</base_extra>
+</base>
