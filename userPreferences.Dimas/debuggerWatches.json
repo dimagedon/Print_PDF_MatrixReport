@@ -1,6 +1,14 @@
 [
 	{
 		"type": 66,
+		"formula": "$file"
+	},
+	{
+		"type": 66,
+		"formula": "$documentpath"
+	},
+	{
+		"type": 66,
 		"formula": "btnTrace"
 	}
 ]
